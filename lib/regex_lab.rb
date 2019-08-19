@@ -4,8 +4,8 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  regex = /un\w*ing/i
-  text.match(regex)
+  regex = /\b\un\w*ing$/i
+  text.scan(regex)
 end
 
 def words_five_letters_long(text)
